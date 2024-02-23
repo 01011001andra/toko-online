@@ -1,3 +1,4 @@
 import MainNavbar from "./MainNavbar";
+import MainFooter from "./MainFooter";
 
-export { MainNavbar };
+export { MainNavbar, MainFooter };
