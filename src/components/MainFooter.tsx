@@ -24,7 +24,11 @@ const MainFooter = () => {
     <footer className="relative w-full pt-20">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
-          <Typography placeholder="" variant="h5" className="mb-6">
+          <Typography
+            placeholder=""
+            variant="h5"
+            className="mb-6 text-base lg:text-lg"
+          >
             Material Tailwind
           </Typography>
           <div className="grid grid-cols-3 justify-between gap-4 ">
@@ -34,7 +38,7 @@ const MainFooter = () => {
                   placeholder=""
                   variant="small"
                   color="blue-gray"
-                  className="mb-3 font-medium opacity-40"
+                  className="mb-3 font-medium opacity-40 "
                 >
                   {title}
                 </Typography>
@@ -45,7 +49,7 @@ const MainFooter = () => {
                       as="a"
                       href="#"
                       color="gray"
-                      className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
+                      className="py-1.5 font-normal transition-colors text-xs lg:text-sm hover:text-blue-gray-900"
                     >
                       {link}
                     </Typography>
@@ -59,7 +63,7 @@ const MainFooter = () => {
           <Typography
             placeholder=""
             variant="small"
-            className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
+            className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0 text-xs"
           >
             &copy; {currentYear}{" "}
             <a href="https://material-tailwind.com/">Material Tailwind</a>. All

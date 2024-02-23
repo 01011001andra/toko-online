@@ -23,8 +23,11 @@ const ProductCarousel = () => {
         breakpoints={{
           0: {
             slidesPerView: 1.3,
+            spaceBetween: 8,
           },
-          // when window width is >= 640px
+          520: {
+            slidesPerView: 1.8,
+          }, // when window width is >= 640px
           640: {
             slidesPerView: 2.5,
             spaceBetween: 10,
