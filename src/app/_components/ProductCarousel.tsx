@@ -88,7 +88,7 @@ const ProductCarousel = () => {
               placeholder=""
               ripple={false}
               fullWidth={true}
-              className="bg-blue-gray-900/10 text-[11px] sm:text-sm text-black shadow-none sm:hover:scale-105 hover:shadow-none focus:shadow-none active:scale-105"
+              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none focus:shadow-none active:scale-105"
             >
               Tambah ke keranjang
             </Button>
@@ -139,7 +139,7 @@ const ProductCarousel = () => {
               placeholder=""
               ripple={false}
               fullWidth={true}
-              className="bg-blue-gray-900/10 text-[11px] sm:text-sm text-black shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
             >
               Tambah ke keranjang
             </Button>
@@ -190,7 +190,7 @@ const ProductCarousel = () => {
               placeholder=""
               ripple={false}
               fullWidth={true}
-              className="bg-blue-gray-900/10 text-[11px] sm:text-sm text-black shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
             >
               Tambah ke keranjang
             </Button>
@@ -241,7 +241,7 @@ const ProductCarousel = () => {
               placeholder=""
               ripple={false}
               fullWidth={true}
-              className="bg-blue-gray-900/10 text-[11px] sm:text-sm text-black shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
             >
               Tambah ke keranjang
             </Button>
@@ -292,7 +292,7 @@ const ProductCarousel = () => {
               placeholder=""
               ripple={false}
               fullWidth={true}
-              className="bg-blue-gray-900/10 text-[11px] sm:text-sm text-black shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
             >
               Tambah ke keranjang
             </Button>
@@ -343,7 +343,7 @@ const ProductCarousel = () => {
               placeholder=""
               ripple={false}
               fullWidth={true}
-              className="bg-blue-gray-900/10 text-[11px] sm:text-sm text-black shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
             >
               Tambah ke keranjang
             </Button>
@@ -394,7 +394,7 @@ const ProductCarousel = () => {
               placeholder=""
               ripple={false}
               fullWidth={true}
-              className="bg-blue-gray-900/10 text-[11px] sm:text-sm text-black shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
             >
               Tambah ke keranjang
             </Button>
@@ -445,7 +445,7 @@ const ProductCarousel = () => {
               placeholder=""
               ripple={false}
               fullWidth={true}
-              className="bg-blue-gray-900/10 text-[11px] sm:text-sm text-black shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
             >
               Tambah ke keranjang
             </Button>
@@ -496,7 +496,7 @@ const ProductCarousel = () => {
               placeholder=""
               ripple={false}
               fullWidth={true}
-              className="bg-blue-gray-900/10 text-[11px] sm:text-sm text-black shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
             >
               Tambah ke keranjang
             </Button>
