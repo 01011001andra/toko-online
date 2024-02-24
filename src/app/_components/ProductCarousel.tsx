@@ -11,7 +11,7 @@ import { NavigationCarousel } from ".";
 
 const ProductCarousel = () => {
   return (
-    <div className="flex flex-col gap-2 lg:gap-5">
+    <div className="flex flex-col gap-2 lg:gap-5 border-b pb-5">
       <div className="flex justify-between items-center ">
         <motion.h2
           whileInView={{ opacity: [0, 4, 1] }}
@@ -88,9 +88,15 @@ const ProductCarousel = () => {
               placeholder=""
               ripple={false}
               fullWidth={true}
-              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none focus:shadow-none active:scale-105"
+              className=" bg-blue-gray-900/10 text-blue-gray-900 text-[11px] sm:text-sm shadow-none sm:hover:scale-105 hover:shadow-none focus:shadow-none active:scale-105"
             >
               Tambah ke keranjang
+            </Button>
+            <Button
+              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              placeholder=""
+            >
+              BELI SEKARANG
             </Button>
           </div>
         </SwiperSlide>
@@ -139,9 +145,15 @@ const ProductCarousel = () => {
               placeholder=""
               ripple={false}
               fullWidth={true}
-              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              className=" bg-blue-gray-900/10 text-blue-gray-900 text-[11px] sm:text-sm shadow-none sm:hover:scale-105 hover:shadow-none focus:shadow-none active:scale-105"
             >
               Tambah ke keranjang
+            </Button>
+            <Button
+              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              placeholder=""
+            >
+              BELI SEKARANG
             </Button>
           </div>
         </SwiperSlide>
@@ -190,9 +202,15 @@ const ProductCarousel = () => {
               placeholder=""
               ripple={false}
               fullWidth={true}
-              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              className=" bg-blue-gray-900/10 text-blue-gray-900 text-[11px] sm:text-sm shadow-none sm:hover:scale-105 hover:shadow-none focus:shadow-none active:scale-105"
             >
               Tambah ke keranjang
+            </Button>
+            <Button
+              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              placeholder=""
+            >
+              BELI SEKARANG
             </Button>
           </div>
         </SwiperSlide>
@@ -241,9 +259,15 @@ const ProductCarousel = () => {
               placeholder=""
               ripple={false}
               fullWidth={true}
-              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              className=" bg-blue-gray-900/10 text-blue-gray-900 text-[11px] sm:text-sm shadow-none sm:hover:scale-105 hover:shadow-none focus:shadow-none active:scale-105"
             >
               Tambah ke keranjang
+            </Button>
+            <Button
+              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              placeholder=""
+            >
+              BELI SEKARANG
             </Button>
           </div>
         </SwiperSlide>
@@ -292,9 +316,15 @@ const ProductCarousel = () => {
               placeholder=""
               ripple={false}
               fullWidth={true}
-              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              className=" bg-blue-gray-900/10 text-blue-gray-900 text-[11px] sm:text-sm shadow-none sm:hover:scale-105 hover:shadow-none focus:shadow-none active:scale-105"
             >
               Tambah ke keranjang
+            </Button>
+            <Button
+              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              placeholder=""
+            >
+              BELI SEKARANG
             </Button>
           </div>
         </SwiperSlide>
@@ -343,9 +373,15 @@ const ProductCarousel = () => {
               placeholder=""
               ripple={false}
               fullWidth={true}
-              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              className=" bg-blue-gray-900/10 text-blue-gray-900 text-[11px] sm:text-sm shadow-none sm:hover:scale-105 hover:shadow-none focus:shadow-none active:scale-105"
             >
               Tambah ke keranjang
+            </Button>
+            <Button
+              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              placeholder=""
+            >
+              BELI SEKARANG
             </Button>
           </div>
         </SwiperSlide>
@@ -394,9 +430,15 @@ const ProductCarousel = () => {
               placeholder=""
               ripple={false}
               fullWidth={true}
-              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              className=" bg-blue-gray-900/10 text-blue-gray-900 text-[11px] sm:text-sm shadow-none sm:hover:scale-105 hover:shadow-none focus:shadow-none active:scale-105"
             >
               Tambah ke keranjang
+            </Button>
+            <Button
+              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              placeholder=""
+            >
+              BELI SEKARANG
             </Button>
           </div>
         </SwiperSlide>
@@ -445,9 +487,15 @@ const ProductCarousel = () => {
               placeholder=""
               ripple={false}
               fullWidth={true}
-              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              className=" bg-blue-gray-900/10 text-blue-gray-900 text-[11px] sm:text-sm shadow-none sm:hover:scale-105 hover:shadow-none focus:shadow-none active:scale-105"
             >
               Tambah ke keranjang
+            </Button>
+            <Button
+              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              placeholder=""
+            >
+              BELI SEKARANG
             </Button>
           </div>
         </SwiperSlide>
@@ -496,9 +544,15 @@ const ProductCarousel = () => {
               placeholder=""
               ripple={false}
               fullWidth={true}
-              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              className=" bg-blue-gray-900/10 text-blue-gray-900 text-[11px] sm:text-sm shadow-none sm:hover:scale-105 hover:shadow-none focus:shadow-none active:scale-105"
             >
               Tambah ke keranjang
+            </Button>
+            <Button
+              className="bg-black text-[11px] sm:text-sm text-white shadow-none sm:hover:scale-105 hover:shadow-none  focus:shadow-none active:scale-105"
+              placeholder=""
+            >
+              BELI SEKARANG
             </Button>
           </div>
         </SwiperSlide>

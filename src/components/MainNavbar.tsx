@@ -32,6 +32,9 @@ import {
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
 import { useWindowScrollPositions } from "@/hooks";
+import { NextRouter } from "next/router";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const navListMenuItems = [
   {
@@ -175,35 +178,30 @@ function NavListMenu() {
 }
 
 function NavList() {
+  const router = useRouter();
   return (
     <List
       className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 overflow-y-auto max-h-[80vh]"
       placeholder=""
     >
-      <Typography
-        placeholder=""
-        as="a"
-        href="#"
-        variant="small"
-        color="blue-gray"
-        className="font-medium"
-      >
-        <ListItem placeholder="" className="flex items-center gap-2 py-2 pr-4">
+      <Link href={"/"}>
+        <ListItem
+          placeholder=""
+          className="flex items-center gap-2 py-2 pr-4 text-sm leading-tight transition-all duration-500 text-blue-gray-900"
+        >
           Beranda
         </ListItem>
-      </Typography>
-      <Typography
-        placeholder=""
-        as="a"
-        href="#"
-        variant="small"
-        color="blue-gray"
-        className="font-medium"
-      >
-        <ListItem placeholder="" className="flex items-center gap-2 py-2 pr-4">
+      </Link>
+
+      <Link href={"/tentang"}>
+        <ListItem
+          placeholder=""
+          className="flex items-center gap-2 py-2 pr-4 text-sm leading-tight transition-all duration-500 text-blue-gray-900"
+        >
           Tentang Kami
         </ListItem>
-      </Typography>
+      </Link>
+
       <NavListMenu />
       <Typography
         placeholder=""

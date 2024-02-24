@@ -24,7 +24,7 @@ const NavigationCarousel = () => {
     setEndSlider(swiper.isEnd);
   };
   return (
-    <div className="md:flex items-center gap-3 justify-end mt-5 border-b pb-5 hidden">
+    <div className="md:flex items-center gap-3 justify-end mt-5  hidden">
       <IconButton
         placeholder={""}
         size="sm"
