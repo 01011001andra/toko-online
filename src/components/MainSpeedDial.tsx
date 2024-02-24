@@ -16,7 +16,7 @@ import {
 
 const MainSpeedDial = () => {
   return (
-    <div className="fixed bottom-8 flex lg:hidden z-50 right-4">
+    <div className="fixed bottom-8 flex lg:hidden z-50 right-7">
       <SpeedDial className="group">
         <Badge
           content="2"
