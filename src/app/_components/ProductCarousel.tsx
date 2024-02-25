@@ -289,7 +289,9 @@ const ProductCarousel = ({ kategori }: { kategori: string }) => {
 
               <div className="flex flex-col">
                 <h3 className="text-sm lg:text-base truncate">{slide.brand}</h3>
-                <span className="text-base font-bold">{slide.price}</span>
+                <span className="text-sm lg:text-base font-bold">
+                  {slide.price}
+                </span>
               </div>
               <div className="flex justify-between">
                 <Rating placeholder="" value={slide.rating} readonly />
