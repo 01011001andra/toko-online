@@ -21,7 +21,7 @@ export default function Home() {
           </small>
         </div>
 
-        <div className="flex  w-full flex-col gap-3">
+        <div className="flex  w-full flex-col gap-3 ">
           <div className="w-full h-full">
             <ProductCarousel kategori="sepatu" />
           </div>

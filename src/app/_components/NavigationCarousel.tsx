@@ -24,27 +24,32 @@ const NavigationCarousel = () => {
     setEndSlider(swiper.isEnd);
   };
   return (
-    <div className="md:flex items-center gap-3 justify-end mt-5  hidden">
-      <IconButton
-        placeholder={""}
-        size="sm"
-        variant="outlined"
-        onClick={prev}
-        disabled={beginSlider}
-      >
-        <ArrowLeftIcon strokeWidth={2} className="h-4 w-4" />
-      </IconButton>
-
-      <IconButton
-        placeholder={""}
-        size="sm"
-        variant="outlined"
-        onClick={next}
-        disabled={endSlider}
-      >
-        <ArrowRightIcon strokeWidth={2} className="h-4 w-4" />
-      </IconButton>
-    </div>
+    <>
+      <div className="md:hidden  group-hover:flex absolute top-32 z-10   mt-5  hidden">
+        <IconButton
+          placeholder={""}
+          size="lg"
+          variant="outlined"
+          onClick={prev}
+          disabled={beginSlider}
+          className="bg-white"
+        >
+          <ArrowLeftIcon strokeWidth={2} className="h-4 w-4" />
+        </IconButton>
+      </div>
+      <div className="md:hidden group-hover:flex absolute top-32 right-0 z-10  mt-5  hidden">
+        <IconButton
+          placeholder={""}
+          size="lg"
+          className="bg-white"
+          variant="outlined"
+          onClick={next}
+          disabled={endSlider}
+        >
+          <ArrowRightIcon strokeWidth={2} className="h-4 w-4" />
+        </IconButton>
+      </div>
+    </>
   );
 };
 

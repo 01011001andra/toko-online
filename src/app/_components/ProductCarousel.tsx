@@ -30,7 +30,7 @@ const ProductCarousel = ({ kategori }: { kategori: string }) => {
       image:
         "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       rating: 4,
-      brand: "Nike",
+      brand: "Nike ardila pcs2ildfjsdlf aolsdfjalfj",
       price: "Rp 1.000.000.-",
       category: "sepatu",
       slug: "sepatu-nike1",
@@ -229,7 +229,7 @@ const ProductCarousel = ({ kategori }: { kategori: string }) => {
     // Add more slide data as needed
   ];
   return (
-    <div className="flex flex-col gap-2 lg:gap-5 border-b pb-5">
+    <div className="flex flex-col gap-2 lg:gap-5 border-b pb-5 group">
       <div className="flex justify-between items-center ">
         <motion.h2
           whileInView={{ opacity: [0, 4, 1] }}
@@ -251,34 +251,30 @@ const ProductCarousel = ({ kategori }: { kategori: string }) => {
         modules={[Navigation, Pagination, A11y]}
         breakpoints={{
           0: {
-            slidesPerView: 1.3,
+            slidesPerView: 2.3,
             spaceBetween: 8,
           },
           520: {
-            slidesPerView: 1.8,
+            slidesPerView: 3.3,
           }, // when window width is >= 640px
-          640: {
-            slidesPerView: 2.5,
+          840: {
+            slidesPerView: 4.2,
             spaceBetween: 10,
           },
           // when window width is >= 768px
-          768: {
-            slidesPerView: 3.5,
-            spaceBetween: 25,
+          1200: {
+            slidesPerView: 5.3,
+            spaceBetween: 10,
           },
         }}
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-col gap-2 lg:gap-3 justify-center">
+            <div className="flex flex-col gap-2 lg:gap-3 justify-center hover:bg-gray-200 p-0 lg:p-2">
               <div
-                className={`relative w-full h-full group bg-${slide.color}-500`}
+                className={`relative w-full h-full rounded-xl  bg-${slide.color}-500`}
               >
-                <div className="w-full h-full absolute group-hover:bg-black/20 cursor-pointer transition-all duration-500  flex items-center justify-center rounded-lg">
-                  <span className="w-16 rounded-full items-center justify-center hidden transition-all duration-500  group-hover:flex text-center h-16 bg-white text-black font-bold text-xs">
-                    Lihat
-                  </span>
-                </div>
+                <div className="w-full h-full absolute hover:bg-black/20 cursor-pointer transition-all duration-500  flex items-center justify-center rounded-lg"></div>
                 <Image
                   placeholder="blur"
                   blurDataURL={slide.image}
@@ -287,8 +283,13 @@ const ProductCarousel = ({ kategori }: { kategori: string }) => {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="w-full h-52 rounded-lg object-cover lg:h-72 border"
+                  className="w-full h-44 rounded-lg object-cover lg:h-52 border"
                 />
+              </div>
+
+              <div className="flex flex-col">
+                <h3 className="text-sm lg:text-base truncate">{slide.brand}</h3>
+                <span className="text-base font-bold">{slide.price}</span>
               </div>
               <div className="flex justify-between">
                 <Rating placeholder="" value={slide.rating} readonly />
@@ -305,12 +306,7 @@ const ProductCarousel = ({ kategori }: { kategori: string }) => {
                   />
                 </svg>
               </div>
-
-              <div className="flex justify-between">
-                <h3 className="text-sm lg:text-base">{slide.brand}</h3>
-                <span className="text-xs lg:text-base">{slide.price}</span>
-              </div>
-              <Button
+              {/* <Button
                 placeholder=""
                 ripple={false}
                 fullWidth={true}
@@ -321,7 +317,10 @@ const ProductCarousel = ({ kategori }: { kategori: string }) => {
               <Button
                 placeholder=""
                 onClick={() =>
-                  handleNavigate({ kategori: slide.category, slug: slide.slug })
+                  handleNavigate({
+                    kategori: slide.category,
+                    slug: slide.slug,
+                  })
                 }
                 ripple={false}
                 color="black"
@@ -329,11 +328,13 @@ const ProductCarousel = ({ kategori }: { kategori: string }) => {
                 className="text-white text-[11px] sm:text-sm shadow-none sm:hover:scale-105 hover:shadow-none focus:shadow-none active:scale-105"
               >
                 Beli Sekarang
-              </Button>
+              </Button> */}
             </div>
           </SwiperSlide>
         ))}
-        <NavigationCarousel />
+        <div className="w-full h-full group hidden md:flex">
+          <NavigationCarousel />
+        </div>
       </Swiper>
     </div>
   );

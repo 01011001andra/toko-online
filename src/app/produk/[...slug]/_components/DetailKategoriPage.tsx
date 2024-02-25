@@ -8,7 +8,7 @@ const DetailKategoriPage = ({
   kategori: string;
 }) => {
   return (
-    <div className="w-full h-full max-w-screen-xl mx-auto px-4 ">
+    <div className="w-full h-full max-w-screen-xl mx-auto ">
       <h1>
         {kategori}/{detail}
       </h1>
