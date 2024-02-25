@@ -36,92 +36,93 @@ import { NextRouter } from "next/router";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
-const navListMenuItems = [
+const kategori = [
   {
-    title: "Products",
+    name: "sepatu",
     description: "Find the perfect solution for your needs.",
     icon: SquaresPlusIcon,
   },
   {
-    title: "About Us",
+    name: "baju",
     description: "Meet and learn about our dedication",
     icon: UserGroupIcon,
   },
   {
-    title: "Blog",
+    name: "celana",
     description: "Find the perfect solution for your needs.",
     icon: Bars4Icon,
   },
   {
-    title: "Services",
+    name: "tas",
     description: "Learn how we can help you achieve your goals.",
     icon: SunIcon,
   },
   {
-    title: "Support",
+    name: "kalung",
     description: "Reach out to us for assistance or inquiries",
     icon: GlobeAmericasIcon,
   },
   {
-    title: "Contact",
+    name: "ikat pinggang",
     description: "Find the perfect solution for your needs.",
     icon: PhoneIcon,
   },
   {
-    title: "News",
+    name: "dompet",
     description: "Read insightful articles, tips, and expert opinions.",
     icon: NewspaperIcon,
   },
   {
-    title: "Products",
+    name: "topeng",
     description: "Find the perfect solution for your needs.",
     icon: RectangleGroupIcon,
   },
   {
-    title: "Special Offers",
+    name: "gelang",
     description: "Explore limited-time deals and bundles",
     icon: TagIcon,
   },
 ];
 
-function NavListMenu() {
+function NavListMenu({
+  openNav,
+  setOpenNav,
+}: {
+  openNav: boolean;
+  setOpenNav: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-  const renderItems = navListMenuItems.map(
-    ({ icon, title, description }, key) => (
-      <a href="#" key={key}>
-        <MenuItem
-          placeholder=""
-          className="flex items-center gap-3 rounded-lg "
-        >
-          <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
-            {" "}
-            {React.createElement(icon, {
-              strokeWidth: 2,
-              className: "h-6 text-gray-900 w-6",
-            })}
-          </div>
-          <div>
-            <Typography
-              placeholder=""
-              variant="h6"
-              color="blue-gray"
-              className="flex items-center text-sm font-bold"
-            >
-              {title}
-            </Typography>
-            <Typography
-              placeholder=""
-              variant="paragraph"
-              className="text-xs !font-medium text-blue-gray-500"
-            >
-              {description}
-            </Typography>
-          </div>
-        </MenuItem>
-      </a>
-    )
-  );
+  const renderItems = kategori.map(({ icon, name, description }, key) => (
+    <Link href={`/produk/${name}`} key={key} onClick={() => setOpenNav(false)}>
+      <MenuItem placeholder="" className="flex items-center gap-3 rounded-lg ">
+        <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
+          {" "}
+          {React.createElement(icon, {
+            strokeWidth: 2,
+            className: "h-6 text-gray-900 w-6",
+          })}
+        </div>
+        <div>
+          <Typography
+            placeholder=""
+            variant="h6"
+            color="blue-gray"
+            className="flex items-center text-sm font-bold capitalize"
+          >
+            {name}
+          </Typography>
+          <Typography
+            placeholder=""
+            variant="paragraph"
+            className="text-xs !font-medium text-blue-gray-500"
+          >
+            {description}
+          </Typography>
+        </div>
+      </MenuItem>
+    </Link>
+  ));
 
   return (
     <React.Fragment>
@@ -177,7 +178,13 @@ function NavListMenu() {
   );
 }
 
-function NavList() {
+function NavList({
+  openNav,
+  setOpenNav,
+}: {
+  openNav: boolean;
+  setOpenNav: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
   const router = useRouter();
   return (
     <List
@@ -202,7 +209,7 @@ function NavList() {
         </ListItem>
       </Link>
 
-      <NavListMenu />
+      <NavListMenu openNav={openNav} setOpenNav={setOpenNav} />
       <Typography
         placeholder=""
         as="a"
@@ -248,7 +255,7 @@ export default function MainNavbar() {
           SERBA-8K
         </Typography>
         <div className="hidden lg:block">
-          <NavList />
+          <NavList openNav={openNav} setOpenNav={setOpenNav} />
         </div>
         <div className="hidden gap-5 lg:flex">
           <Badge content="2" withBorder>
@@ -303,7 +310,7 @@ export default function MainNavbar() {
         </IconButton>
       </div>
       <Collapse open={openNav}>
-        <NavList />
+        <NavList openNav={openNav} setOpenNav={setOpenNav} />
         {/* <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
           <Button
             placeholder=""

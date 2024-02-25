@@ -1,12 +1,13 @@
 import Image from "next/image";
 import React from "react";
 import { FadeInWhenVisible, ScaleWhenVisible } from "@/components";
+import { GalleryTesti } from "./_components";
 
 const Tentang = () => {
   return (
-    <div className="flex flex-col items-center gap-10 px-4 bg-white w-full h-full">
+    <div className="flex flex-col items-center px-4 bg-white w-full h-full">
       {/* about us */}
-      <section className="flex flex-col gap-10 lg:flex-row-reverse min-h-[80vh] lg:items-center items-start lg:justify-center  max-w-screen-xl h-full w-full">
+      <section className="flex flex-col gap-10 lg:flex-row-reverse min-h-[90vh] lg:items-center items-start lg:justify-center  max-w-screen-xl h-full w-full">
         <div className="lg:w-1/2 w-full">
           <FadeInWhenVisible>
             <Image
@@ -21,21 +22,36 @@ const Tentang = () => {
             />
           </FadeInWhenVisible>
         </div>
-        <div className="lg:w-1/2 w-full flex flex-col gap-4 lg:gap-10 items-center justify-center">
+        <div className="lg:w-1/2 w-full flex flex-col gap-4 lg:gap-8 items-center justify-center">
           <ScaleWhenVisible>
             <h1 className="text-2xl sm:text-3xl font-bold uppercase">
               SERBA 8K
             </h1>
           </ScaleWhenVisible>
-          <p className="text-sm sm:text-base text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sint
-            saepe, mollitia perferendis minus corporis libero hic, animi,
-            quaerat reprehenderit placeat repellat fugiat neque dignissimos.
-            Laboriosam vero veniam amet, maiores commodi recusandae error
-            voluptatem porro eos dolor sint quam est repudiandae beatae, aliquam
-            corporis quo accusantium rem saepe, expedita praesentium.
+          <p className="text-sm sm:text-base text-justify">
+            Serba 8K adalah, toko yang berada di Batam. Kami menawarkan beragam
+            produk berkualitas dengan harga terjangkau kepada pelanggan kami.
+            Dengan fokus pada kepuasan pelanggan, kami menyediakan berbagai
+            macam pilihan outfit untuk segala kebutuhan Anda. Di SERBA 8K, kami
+            percaya bahwa gaya tidak harus mahal. Itulah mengapa kami
+            berkomitmen untuk menyediakan pakaian dengan desain yang stylish dan
+            kualitas yang terjamin tanpa menguras dompet Anda. Kunjungi toko
+            kami di Batam dan temukan outfit yang sesuai dengan kepribadian dan
+            gaya Anda.
           </p>
         </div>
+      </section>
+      <section className="w-full max-w-screen-xl h-full flex flex-col gap-3">
+        <div className="flex flex-col gap-3">
+          <h1 className="text-2xl lg:text-3xl font-bold uppercase">
+            Testimonial
+          </h1>
+          <p className="text-sm sm:text-base text-justify">
+            Kami telah melakukan transaksi dengan banyak costumer yang sudah
+            puas dengan product kami, berikut ini adalah testimonial kami:
+          </p>
+        </div>
+        <GalleryTesti />
       </section>
     </div>
   );

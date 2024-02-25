@@ -23,22 +23,22 @@ export default function Home() {
 
         <div className="flex  w-full flex-col gap-3">
           <div className="w-full h-full">
-            <ProductCarousel />
+            <ProductCarousel kategori="sepatu" />
           </div>
           <div className="w-full h-full">
-            <ProductCarousel />
+            <ProductCarousel kategori="sepatu" />
           </div>
           <div className="w-full h-full">
-            <ProductCarousel />
+            <ProductCarousel kategori="sepatu" />
           </div>
           <div className="w-full h-full">
-            <ProductCarousel />
+            <ProductCarousel kategori="sepatu" />
           </div>
           <div className="w-full h-full">
-            <ProductCarousel />
+            <ProductCarousel kategori="sepatu" />
           </div>
           <div className="w-full h-full">
-            <ProductCarousel />
+            <ProductCarousel kategori="sepatu" />
           </div>
         </div>
       </section>

@@ -3,6 +3,7 @@ import MainFooter from "./MainFooter";
 import MainSpeedDial from "./MainSpeedDial";
 import FadeInWhenVisible from "./FadeInWhenVisible";
 import ScaleWhenVisible from "./ScaleWhenVisible";
+import DetailProduct from "./DetailProduct";
 
 export {
   MainNavbar,
@@ -10,4 +11,5 @@ export {
   MainSpeedDial,
   FadeInWhenVisible,
   ScaleWhenVisible,
+  DetailProduct,
 };
