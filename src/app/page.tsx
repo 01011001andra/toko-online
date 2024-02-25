@@ -2,7 +2,7 @@ import { MainCarousel, ProductCarousel } from "./_components";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center gap-10 px-4 bg-white w-full">
+    <main className="flex min-h-screen flex-col items-center gap-10 bg-gray-100 w-full">
       {/* MAIN CAROUSEL */}
       <section className="max-w-screen-xl w-full h-[30vh] md:h-[40vh] lg:h-[50vh]">
         <MainCarousel />

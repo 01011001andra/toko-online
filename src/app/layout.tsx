@@ -20,7 +20,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/x-icon" href="/barnd.svg" />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-gray-100`}>
         <MainNavbar />
         {/* speed dial */}
         <MainSpeedDial />

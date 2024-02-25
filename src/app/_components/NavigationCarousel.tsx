@@ -32,7 +32,7 @@ const NavigationCarousel = () => {
           variant="outlined"
           onClick={prev}
           disabled={beginSlider}
-          className="bg-white"
+          className="bg-gray-100"
         >
           <ArrowLeftIcon strokeWidth={2} className="h-4 w-4" />
         </IconButton>
@@ -41,7 +41,7 @@ const NavigationCarousel = () => {
         <IconButton
           placeholder={""}
           size="lg"
-          className="bg-white"
+          className="bg-gray-100"
           variant="outlined"
           onClick={next}
           disabled={endSlider}

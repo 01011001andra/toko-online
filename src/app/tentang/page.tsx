@@ -5,7 +5,7 @@ import { GalleryTesti } from "./_components";
 
 const Tentang = () => {
   return (
-    <div className="flex flex-col items-center px-4 bg-white w-full h-full">
+    <div className="flex flex-col items-center px-4 bg-gray-100 w-full h-full">
       {/* about us */}
       <section className="flex flex-col gap-10 lg:flex-row-reverse min-h-[90vh] lg:items-center items-start lg:justify-center  max-w-screen-xl h-full w-full">
         <div className="lg:w-1/2 w-full">
