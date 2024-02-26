@@ -6,7 +6,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Button, Rating } from "@material-tailwind/react";
 import { NavigationCarousel } from ".";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -27,224 +26,184 @@ const ProductCarousel = ({ kategori }: { kategori: string }) => {
 
   const slides = [
     {
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/cantik.avif",
       rating: 4,
       discount: 0,
       brand: "Nike ardila pcs2ildfjsdlf aolsdfjalfj",
       price: "Rp 1.000.000.-",
-      category: "sepatu",
+      kategori: "sepatu",
       slug: "sepatu-nike1",
-      color: "red",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/cantik.avif",
       rating: 4,
       discount: 5,
       brand: "Nike",
       price: "Rp 1.000.000.-",
-      category: "sepatu",
+      kategori: "sepatu",
       slug: "sepatu-nike1",
-      color: "red",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/cantik.avif",
       rating: 4,
       discount: 5,
       brand: "Nike",
       price: "Rp 1.000.000.-",
-      category: "sepatu",
+      kategori: "sepatu",
       slug: "sepatu-nike1",
-      color: "red",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/cantik.avif",
       rating: 4,
       discount: 5,
       brand: "Nike",
       price: "Rp 1.000.000.-",
-      category: "sepatu",
+      kategori: "sepatu",
       slug: "sepatu-nike1",
-      color: "red",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/cantik.avif",
       rating: 4,
       discount: 5,
       brand: "Nike",
       price: "Rp 1.000.000.-",
-      category: "sepatu",
+      kategori: "sepatu",
       slug: "sepatu-nike1",
-      color: "red",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/cantik.avif",
       rating: 4,
       discount: 5,
       brand: "Nike",
       price: "Rp 1.000.000.-",
-      category: "sepatu",
+      kategori: "sepatu",
       slug: "sepatu-nike1",
-      color: "red",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/cantik.avif",
       rating: 4,
       discount: 5,
       brand: "Nike",
       price: "Rp 1.000.000.-",
-      category: "sepatu",
+      kategori: "sepatu",
       slug: "sepatu-nike1",
-      color: "red",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/cantik.avif",
       rating: 4,
       discount: 5,
       brand: "Nike",
       price: "Rp 1.000.000.-",
-      category: "sepatu",
+      kategori: "sepatu",
       slug: "sepatu-nike1",
-      color: "red",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/cantik.avif",
       rating: 4,
       discount: 5,
       brand: "Nike",
       price: "Rp 1.000.000.-",
-      category: "sepatu",
+      kategori: "sepatu",
       slug: "sepatu-nike1",
-      color: "red",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/cantik.avif",
       rating: 4,
       discount: 5,
       brand: "Nike",
       price: "Rp 1.000.000.-",
-      category: "sepatu",
+      kategori: "sepatu",
       slug: "sepatu-nike1",
-      color: "red",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/cantik.avif",
       rating: 4,
       discount: 5,
       brand: "Nike",
       price: "Rp 1.000.000.-",
-      category: "sepatu",
+      kategori: "sepatu",
       slug: "sepatu-nike1",
-      color: "red",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/cantik.avif",
       rating: 4,
       discount: 5,
       brand: "Nike",
       price: "Rp 1.000.000.-",
-      category: "sepatu",
+      kategori: "sepatu",
       slug: "sepatu-nike1",
-      color: "red",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/cantik.avif",
       rating: 4,
       discount: 5,
       brand: "Nike",
       price: "Rp 1.000.000.-",
-      category: "sepatu",
+      kategori: "sepatu",
       slug: "sepatu-nike1",
-      color: "red",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/cantik.avif",
       rating: 4,
       discount: 5,
       brand: "Nike",
       price: "Rp 1.000.000.-",
-      category: "sepatu",
+      kategori: "sepatu",
       slug: "sepatu-nike1",
-      color: "red",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/cantik.avif",
       rating: 4,
       discount: 5,
       brand: "Nike",
       price: "Rp 1.000.000.-",
-      category: "sepatu",
+      kategori: "sepatu",
       slug: "sepatu-nike1",
-      color: "red",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/cantik.avif",
       rating: 4,
       discount: 5,
       brand: "Nike",
       price: "Rp 1.000.000.-",
-      category: "sepatu",
+      kategori: "sepatu",
       slug: "sepatu-nike1",
-      color: "red",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/cantik.avif",
       rating: 4,
       discount: 5,
       brand: "Nike",
       price: "Rp 1.000.000.-",
-      category: "sepatu",
+      kategori: "sepatu",
       slug: "sepatu-nike1",
-      color: "red",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/cantik.avif",
       rating: 4,
       discount: 5,
       brand: "Nike",
       price: "Rp 1.000.000.-",
-      category: "sepatu",
+      kategori: "sepatu",
       slug: "sepatu-nike1",
-      color: "red",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/cantik.avif",
       rating: 4,
       discount: 5,
       brand: "Nike",
       price: "Rp 1.000.000.-",
-      category: "sepatu",
+      kategori: "sepatu",
       slug: "sepatu-nike1",
-      color: "red",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/cantik.avif",
       rating: 4,
       discount: 5,
       brand: "Nike",
       price: "Rp 1.000.000.-",
-      category: "sepatu",
+      kategori: "sepatu",
       slug: "sepatu-nike1",
-      color: "red",
     },
     // Add more slide data as needed
   ];
@@ -290,24 +249,21 @@ const ProductCarousel = ({ kategori }: { kategori: string }) => {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div
+            <Link
+              href={`/produk/${slide.kategori}/${slide.slug}`}
               className={`flex ${
                 index === 0 && "ml-1"
-              } flex-col gap-2 lg:gap-3   h-full hover:bg-gray-200 p-0 lg:p-2`}
+              } flex-col gap-2 lg:gap-3 cursor-pointer  h-full hover:bg-gray-200 lg:p-2`}
             >
-              <div
-                className={`relative w-full rounded-xl  bg-${slide.color}-500`}
-              >
+              <div className={`relative w-full rounded-xl  `}>
                 <div className="w-full h-full absolute hover:bg-black/20 cursor-pointer transition-all duration-500  flex items-center justify-center rounded-lg"></div>
                 <Image
-                  placeholder="blur"
-                  blurDataURL={slide.image}
                   src={slide.image}
                   alt="sepatu1"
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="w-full h-36 rounded-lg object-cover lg:h-auto border"
+                  className="w-full h-36 rounded-lg object-cover lg:h-36 border"
                 />
               </div>
 
@@ -317,12 +273,12 @@ const ProductCarousel = ({ kategori }: { kategori: string }) => {
                     {slide.brand}
                   </h3>
                   {slide.discount > 0 && (
-                    <>
-                      <small>Diskon {slide.discount}%</small>
+                    <div className="flex items-center justify-between">
                       <small className="text-xs italic line-through">
                         {slide.price}
                       </small>
-                    </>
+                      <small>Diskon {slide.discount}%</small>
+                    </div>
                   )}
                   <span className="text-sm lg:text-base font-bold">
                     {slide.price}
@@ -359,7 +315,7 @@ const ProductCarousel = ({ kategori }: { kategori: string }) => {
                   </svg>
                 </div>
               </div>
-            </div>
+            </Link>
           </SwiperSlide>
         ))}
         <div className="w-full h-full group hidden md:flex">

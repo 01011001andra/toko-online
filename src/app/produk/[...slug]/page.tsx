@@ -15,7 +15,7 @@ const DetailProduct = ({ params }: { params: { slug: string[] } }) => {
 
   if (params.slug.length === 2) {
     return (
-      <section className="w-full mx-auto px-4 min-h-screen">
+      <section className="w-full mx-auto min-h-screen">
         <DetailKategoriPage kategori={kategori} detail={slug} />
       </section>
     );

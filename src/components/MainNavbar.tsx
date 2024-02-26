@@ -137,12 +137,11 @@ function NavListMenu({
           <Typography
             as="div"
             variant="small"
-            className="font-medium"
             placeholder={"Hello placeholder"}
           >
             <ListItem
               placeholder={"Helo placeholder"}
-              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
+              className="flex items-center gap-2 py-2 pr-4 text-sm leading-tight font-normal transition-all duration-500 text-blue-gray-900"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -210,18 +209,14 @@ function NavList({
       </Link>
 
       <NavListMenu openNav={openNav} setOpenNav={setOpenNav} />
-      <Typography
-        placeholder=""
-        as="a"
-        href="#"
-        variant="small"
-        color="blue-gray"
-        className="font-medium"
-      >
-        <ListItem placeholder="" className="flex items-center gap-2 py-2 pr-4">
+      <Link href={"/kontak"}>
+        <ListItem
+          placeholder=""
+          className="flex items-center gap-2 py-2 pr-4 text-sm font-normal leading-tight transition-all duration-500 text-blue-gray-900"
+        >
           Kontak
         </ListItem>
-      </Typography>
+      </Link>
     </List>
   );
 }
