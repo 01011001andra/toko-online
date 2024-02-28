@@ -11,9 +11,7 @@ const Tentang = () => {
         <div className="lg:w-1/2 w-full">
           <FadeInWhenVisible>
             <Image
-              src={
-                "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              }
+              src="/jam.jpg"
               alt="sepatu1"
               width={0}
               height={0}

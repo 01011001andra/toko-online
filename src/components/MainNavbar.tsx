@@ -33,7 +33,7 @@ import {
 } from "@heroicons/react/24/solid";
 import { useWindowScrollPositions } from "@/hooks";
 import { NextRouter } from "next/router";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 
 const kategori = [
@@ -224,6 +224,8 @@ function NavList({
 export default function MainNavbar() {
   const [openNav, setOpenNav] = React.useState(false);
   const { scrollY } = useWindowScrollPositions();
+  const pathname = usePathname();
+  const dynamicUrlRegex = /^\/produk\/([^\/]+)/;
 
   React.useEffect(() => {
     window.addEventListener(
@@ -234,9 +236,11 @@ export default function MainNavbar() {
 
   return (
     <Navbar
-      className={`mx-auto max-w-screen-xl  px-4 rounded-none xl:rounded-lg py-2 border-none shadow-none sticky ${
+      className={`mx-auto max-w-screen-xl  px-4 rounded-none xl:rounded-lg py-2 border-none shadow-none ${
+        dynamicUrlRegex.test(pathname) ? "" : "sticky"
+      }  ${
         scrollY <= 10 ? "top-0" : "top-0 lg:top-4"
-      } transition-all duration-500 z-50`}
+      } transition-all duration-500 z-50 `}
       placeholder=""
     >
       <div className="flex items-center justify-between text-blue-gray-900">

@@ -13,8 +13,18 @@ import {
   CogIcon,
   Square3Stack3DIcon,
 } from "@heroicons/react/24/outline";
+import { usePathname } from "next/navigation";
 
 const MainSpeedDial = () => {
+  const pathname = usePathname();
+
+  // Regular expression to match '/produk/' followed by any dynamic segment
+  const dynamicUrlRegex = /^\/produk\/([^\/]+)/;
+
+  if (dynamicUrlRegex.test(pathname)) {
+    return null; // Return null if pathname matches the condition
+  }
+
   return (
     <div className="fixed bottom-8 flex lg:hidden z-50 right-7">
       <SpeedDial className="group">

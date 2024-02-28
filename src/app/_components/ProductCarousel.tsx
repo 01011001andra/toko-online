@@ -225,7 +225,7 @@ const ProductCarousel = ({ kategori }: { kategori: string }) => {
         </Link>
       </div>
       <Swiper
-        navigation={true}
+        navigation={false}
         className="w-full h-72"
         modules={[Navigation, Pagination, A11y]}
         breakpoints={{

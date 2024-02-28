@@ -1,6 +1,7 @@
 "use client";
 
 import { Typography } from "@material-tailwind/react";
+import { usePathname } from "next/navigation";
 
 const LINKS = [
   {
@@ -20,8 +21,17 @@ const LINKS = [
 const currentYear = new Date().getFullYear();
 
 const MainFooter = () => {
+  const pathname = usePathname();
+
+  // Regular expression to match '/produk/' followed by any dynamic segment
+  const dynamicUrlRegex = /^\/produk\/([^\/]+)/;
+
   return (
-    <footer className="relative w-full pt-20">
+    <footer
+      className={`relative w-full pt-20 ${
+        dynamicUrlRegex.test(pathname) && "pb-20"
+      }`}
+    >
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
           <Typography
