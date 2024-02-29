@@ -5,6 +5,7 @@ import {
   Button,
   Typography,
   IconButton,
+  Input,
 } from "@material-tailwind/react";
 
 export default function PilihTipe({
@@ -27,7 +28,7 @@ export default function PilihTipe({
         placement={"bottom"}
       >
         <div className="lg:max-w-screen-xl mx-auto w-full h-full flex flex-col justify-between">
-          <div className="flex flex-col ">
+          <div className="flex flex-col">
             <div className="mb-6 flex items-center justify-between">
               <Typography placeholder={""} variant="h5" color="blue-gray">
                 Sepatu cuy Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -64,48 +65,48 @@ export default function PilihTipe({
             </Typography>
             <div className="flex gap-2 flex-wrap max-w-4xl w-full">
               <Button
-                placeholder={""}
                 size="sm"
+                placeholder=""
                 className="hover:bg-black hover:text-white"
                 variant="outlined"
               >
                 S
               </Button>
               <Button
-                placeholder={""}
                 size="sm"
+                placeholder=""
                 className="hover:bg-black hover:text-white"
                 variant="outlined"
               >
                 M
               </Button>
               <Button
-                placeholder={""}
                 size="sm"
+                placeholder=""
                 className="hover:bg-black hover:text-white"
                 variant="outlined"
               >
                 XL
               </Button>
               <Button
-                placeholder={""}
                 size="sm"
+                placeholder=""
                 className="hover:bg-black hover:text-white"
                 variant="outlined"
               >
                 XXL
               </Button>
               <Button
-                placeholder={""}
                 size="sm"
+                placeholder=""
                 className="hover:bg-black hover:text-white"
                 variant="outlined"
               >
                 XXXL
               </Button>
               <Button
-                placeholder={""}
                 size="sm"
+                placeholder=""
                 className="hover:bg-black hover:text-white"
                 variant="outlined"
               >
@@ -113,9 +114,27 @@ export default function PilihTipe({
               </Button>
             </div>
           </div>
-          <Button placeholder={""} size="lg">
-            Beli Sekarang
-          </Button>
+          <div className="flex flex-col gap-5">
+            <div className="w-full flex justify-between items-center">
+              <span>Jumlah</span>
+              <div className="flex gap-3 ">
+                <IconButton placeholder={""} className="px-5 text-xl font-bold">
+                  -
+                </IconButton>
+                <input
+                  type="text"
+                  className="w-16 lg:max-w-sm lg:w-full border outline-none  text-center"
+                  maxLength={3}
+                />
+                <IconButton placeholder={""} className="px-5 text-xl font-bold">
+                  +
+                </IconButton>
+              </div>
+            </div>
+            <Button placeholder={""} size="lg">
+              Beli Sekarang
+            </Button>
+          </div>
         </div>
       </Drawer>
     </React.Fragment>

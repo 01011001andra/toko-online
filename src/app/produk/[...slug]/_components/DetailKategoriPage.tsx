@@ -24,7 +24,7 @@ import {
   Input,
   Typography,
 } from "@material-tailwind/react";
-import { CollapseDeskripsi } from ".";
+import { CollapseDeskripsi, ProductDetailNavbar } from ".";
 import PilihTipe from "./PilihTipe";
 
 export default function DetailKategoriPage({
@@ -44,6 +44,7 @@ export default function DetailKategoriPage({
   });
   return (
     <div className={"relative z-50"}>
+      <ProductDetailNavbar />
       <div className="w-full flex flex-col lg:flex-row gap-5 justify-center pb-32 lg:pb-44 lg:max-w-screen-xl mx-auto relative">
         <div className="w-full fixed bottom-0 h-16 lg:h-20  z-50 ">
           <div className="flex justify-between max-w-screen-xl mx-auto  w-full h-full text-white">
@@ -349,7 +350,7 @@ export default function DetailKategoriPage({
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className="w-full lg:w-1/2 max-w-screen-xl py-10 flex flex-col gap-5 px-4 mx-auto">
+        <div className="w-full lg:w-1/2 max-w-screen-xl px-4 lg:px-0 flex flex-col gap-5 mx-auto">
           <div className="flex flex-col gap-3">
             <h1 className="">
               Sepatu cuy Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -380,8 +381,8 @@ export default function DetailKategoriPage({
                 className="w-6 h-6"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
                 />
               </svg>
