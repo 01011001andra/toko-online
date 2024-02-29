@@ -349,7 +349,7 @@ export default function DetailKategoriPage({
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className="w-full lg:w-1/2 max-w-screen-xl py-10 flex flex-col gap-5 px-4 mx-auto">
+        <div className="w-full lg:w-1/2 max-w-screen-xl px-4 lg:px-0 flex flex-col gap-5 mx-auto">
           <div className="flex flex-col gap-3">
             <h1 className="">
               Sepatu cuy Lorem, ipsum dolor sit amet consectetur adipisicing
