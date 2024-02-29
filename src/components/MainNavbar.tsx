@@ -237,7 +237,7 @@ export default function MainNavbar() {
   return (
     <Navbar
       className={`mx-auto max-w-screen-xl  px-4 rounded-none xl:rounded-lg py-2 border-none shadow-none ${
-        dynamicUrlRegex.test(pathname) ? "lg:mb-5" : "sticky"
+        dynamicUrlRegex.test(pathname) ? "lg:mb-5 hidden" : "sticky"
       }  ${
         scrollY <= 10 ? "top-0" : "top-0 lg:top-4"
       } transition-all duration-500 z-50 `}
