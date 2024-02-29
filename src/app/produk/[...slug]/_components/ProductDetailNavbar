@@ -18,13 +18,10 @@ import {
 import { useWindowScrollPositions } from "@/hooks";
 import { usePathname, useRouter } from "next/navigation";
 
-
-
 export default function ProductDetailNavbar() {
   const [openNav, setOpenNav] = React.useState(false);
   const { scrollY } = useWindowScrollPositions();
-  const pathname = usePathname();
-  const dynamicUrlRegex = /^\/produk\/([^\/]+)/;
+  const router = useRouter();
 
   React.useEffect(() => {
     window.addEventListener(
@@ -41,7 +38,15 @@ export default function ProductDetailNavbar() {
       placeholder=""
     >
       <div className="flex items-center justify-between text-blue-gray-900">
-        <IconButton variant="text" size="sm" color="gray" placeholder="">
+        <IconButton
+          variant="text"
+          size="sm"
+          color="gray"
+          placeholder=""
+          onClick={() => {
+            router.back();
+          }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
