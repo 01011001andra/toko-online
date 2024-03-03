@@ -7,7 +7,7 @@ import React from "react";
 const KeranjangProduk = () => {
   return (
     <>
-      <div className="w-full flex items-center p-4">
+      <div className="w-full flex items-center p-2">
         <Checkbox
           crossOrigin={"anonymous"}
           label={
@@ -21,13 +21,13 @@ const KeranjangProduk = () => {
           }
         />
       </div>
-      <div className="flex flex-col gap-4">
-        <div className="flex">
+      <div className="flex flex-col gap-4 w-full">
+        <div className="flex flex-col lg:flex-row items-end lg:items-center px-2 ">
           <Checkbox
             defaultChecked={true}
             crossOrigin={"anonymous"}
             ripple={false}
-            className="h-5 w-5 rounded-full border-gray-900/20 bg-gray-900/10 transition-all hover:scale-105 hover:before:opacity-0"
+            className="h-6 w-6 rounded-full border-gray-900/20 bg-gray-900/10 transition-all hover:scale-105 hover:before:opacity-0"
           />
           <Link
             href={"/produk/sepatu/huawei"}
@@ -76,12 +76,12 @@ const KeranjangProduk = () => {
             </div>
           </Link>
         </div>
-        <div className="flex">
+        <div className="flex flex-col lg:flex-row items-end lg:items-center px-2">
           <Checkbox
             defaultChecked={true}
             crossOrigin={"anonymous"}
             ripple={false}
-            className="h-5 w-5 rounded-full border-gray-900/20 bg-gray-900/10 transition-all hover:scale-105 hover:before:opacity-0"
+            className="h-6 w-6 rounded-full border-gray-900/20 bg-gray-900/10 transition-all hover:scale-105 hover:before:opacity-0"
           />
           <Link
             href={"/produk/sepatu/huawei"}
