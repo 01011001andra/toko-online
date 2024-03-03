@@ -22,7 +22,7 @@ const KeranjangProduk = () => {
         />
       </div>
       <div className="flex flex-col gap-4 w-full">
-        <div className="flex flex-col lg:flex-row items-end lg:items-center px-2">
+        <div className="flex flex-col lg:flex-row items-end lg:items-center ">
           <Link
             href={"/produk/sepatu/huawei"}
             className="w-full gap-3 flex hover:bg-gray-100"
@@ -53,7 +53,7 @@ const KeranjangProduk = () => {
               <span className="text-sm lg:text-xl font-bold">
                 Rp. 1.000.000
               </span>
-              <div className="flex gap-3 ">
+              <div className="flex gap-3">
                 <IconButton
                   placeholder={""}
                   className="px-5 text-xl font-bold"
@@ -77,7 +77,7 @@ const KeranjangProduk = () => {
             </div>
           </Link>
         </div>
-        <div className="flex flex-col lg:flex-row items-end lg:items-center px-2">
+        <div className="flex flex-col lg:flex-row items-end lg:items-center ">
           <Link
             href={"/produk/sepatu/huawei"}
             className="w-full gap-3 flex hover:bg-gray-100"
@@ -110,6 +110,7 @@ const KeranjangProduk = () => {
               </span>
               <div className="flex gap-3 ">
                 <IconButton
+                  onClick={(e) => e.stopPropagation()}
                   placeholder={""}
                   className="px-5 text-xl font-bold"
                   size="sm"
@@ -117,11 +118,13 @@ const KeranjangProduk = () => {
                   -
                 </IconButton>
                 <input
+                  onClick={(e) => e.stopPropagation()}
                   type="text"
                   className="w-16 lg:w-20 border outline-none  text-center"
                   maxLength={3}
                 />
                 <IconButton
+                  onClick={(e) => e.stopPropagation()}
                   size="sm"
                   placeholder={""}
                   className="px-5 text-xl font-bold"
