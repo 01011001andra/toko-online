@@ -7,7 +7,7 @@ import React from "react";
 const KeranjangProduk = () => {
   return (
     <>
-      <div className="w-full flex items-center p-2">
+      <div className="w-full flex items-center py-2">
         <Checkbox
           crossOrigin={"anonymous"}
           label={
@@ -25,7 +25,7 @@ const KeranjangProduk = () => {
         <div className="flex flex-col lg:flex-row items-end lg:items-center ">
           <Link
             href={"/produk/sepatu/huawei"}
-            className="w-full gap-3 flex hover:bg-gray-100"
+            className="w-full flex hover:bg-gray-100"
           >
             <Checkbox
               onClick={(e) => e.stopPropagation()}
@@ -44,7 +44,7 @@ const KeranjangProduk = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="flex flex-col gap-3 w-full">
+            <div className="flex flex-col gap-3 w-full ml-3">
               <h2 className=" text-sm lg:text-lg line-clamp-1">
                 Jam Tangan Fashion Pria dan Wanita Jam Tangan Fashion Pria dan
                 Wanita
@@ -80,7 +80,7 @@ const KeranjangProduk = () => {
         <div className="flex flex-col lg:flex-row items-end lg:items-center ">
           <Link
             href={"/produk/sepatu/huawei"}
-            className="w-full gap-3 flex hover:bg-gray-100"
+            className="w-full flex hover:bg-gray-100"
           >
             <Checkbox
               onClick={(e) => e.stopPropagation()}
@@ -99,7 +99,7 @@ const KeranjangProduk = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="flex flex-col gap-3 w-full">
+            <div className="flex flex-col gap-3 w-full ml-3">
               <h2 className=" text-sm lg:text-lg line-clamp-1">
                 Jam Tangan Fashion Pria dan Wanita Jam Tangan Fashion Pria dan
                 Wanita
