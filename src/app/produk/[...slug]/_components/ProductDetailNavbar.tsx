@@ -1,22 +1,9 @@
 "use client";
 
 import React from "react";
-import {
-  Navbar,
-  Collapse,
-  Typography,
-  Button,
-  IconButton,
-  List,
-  ListItem,
-  Menu,
-  MenuHandler,
-  MenuList,
-  MenuItem,
-  Badge,
-} from "@material-tailwind/react";
+import { Navbar, IconButton, Badge } from "@material-tailwind/react";
 import { useWindowScrollPositions } from "@/hooks";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 export default function ProductDetailNavbar() {
   const [openNav, setOpenNav] = React.useState(false);
