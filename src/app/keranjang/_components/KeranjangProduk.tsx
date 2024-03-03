@@ -22,17 +22,18 @@ const KeranjangProduk = () => {
         />
       </div>
       <div className="flex flex-col gap-4 w-full">
-        <div className="flex flex-col lg:flex-row items-end lg:items-center px-2 ">
-          <Checkbox
-            defaultChecked={true}
-            crossOrigin={"anonymous"}
-            ripple={false}
-            className="h-6 w-6 rounded-full border-gray-900/20 bg-gray-900/10 transition-all hover:scale-105 hover:before:opacity-0"
-          />
+        <div className="flex flex-col lg:flex-row items-end lg:items-center px-2">
           <Link
             href={"/produk/sepatu/huawei"}
             className="w-full gap-3 flex hover:bg-gray-100"
           >
+            <Checkbox
+              onClick={(e) => e.stopPropagation()}
+              defaultChecked={true}
+              crossOrigin={"anonymous"}
+              ripple={false}
+              className="h-5 w-5 p-0 border-gray-900/20 bg-gray-900/10 transition-all hover:scale-105 hover:before:opacity-0"
+            />
             <div className="w-52 lg:w-72 h-32 lg:h-52 flex items-center justify-center">
               <Image
                 src={"/cantik.avif"}
@@ -77,16 +78,17 @@ const KeranjangProduk = () => {
           </Link>
         </div>
         <div className="flex flex-col lg:flex-row items-end lg:items-center px-2">
-          <Checkbox
-            defaultChecked={true}
-            crossOrigin={"anonymous"}
-            ripple={false}
-            className="h-6 w-6 rounded-full border-gray-900/20 bg-gray-900/10 transition-all hover:scale-105 hover:before:opacity-0"
-          />
           <Link
             href={"/produk/sepatu/huawei"}
             className="w-full gap-3 flex hover:bg-gray-100"
           >
+            <Checkbox
+              onClick={(e) => e.stopPropagation()}
+              defaultChecked={true}
+              crossOrigin={"anonymous"}
+              ripple={false}
+              className="h-5 w-5 p-0 border-gray-900/20 bg-gray-900/10 transition-all hover:scale-105 hover:before:opacity-0"
+            />
             <div className="w-52 lg:w-72 h-32 lg:h-52 flex items-center justify-center">
               <Image
                 src={"/jam.jpg"}
