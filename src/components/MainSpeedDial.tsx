@@ -21,7 +21,7 @@ const MainSpeedDial = () => {
   // Regular expression to match '/produk/' followed by any dynamic segment
   const dynamicUrlRegex = /^\/produk\/([^\/]+)/;
 
-  if (dynamicUrlRegex.test(pathname)) {
+  if (dynamicUrlRegex.test(pathname)|| pathname === "/keranjang") {
     return null; // Return null if pathname matches the condition
   }
 
