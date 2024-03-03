@@ -6,7 +6,7 @@ const Keranjang = () => {
     <div className="mx-auto flex flex-col gap-3 max-w-screen-xl w-full">
       <KeranjangNavbar />
       {/* keranjang */}
-      <section className="w-full h-full flex flex-col min-h-screen bg-white rounded-lg">
+      <section className="w-full h-full flex flex-col pb-10 bg-white rounded-lg">
         <div className="flex flex-col">
           <KeranjangProduk />
         </div>
