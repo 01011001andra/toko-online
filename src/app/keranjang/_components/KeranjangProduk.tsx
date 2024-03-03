@@ -22,10 +22,10 @@ const KeranjangProduk = () => {
         />
       </div>
       <div className="flex flex-col gap-4 w-full">
-        <div className="flex flex-col lg:flex-row items-end lg:items-center ">
+        <div className="flex flex-col lg:flex-row items-end lg:items-center">
           <Link
             href={"/produk/sepatu/huawei"}
-            className="w-full flex hover:bg-gray-300 transition-all duration-500"
+            className="w-full flex hover:bg-gray-300 transition-all duration-500 py-5 lg:py-0"
           >
             <Checkbox
               onClick={(e) => e.stopPropagation()}
@@ -77,10 +77,10 @@ const KeranjangProduk = () => {
             </div>
           </Link>
         </div>
-        <div className="flex flex-col lg:flex-row items-end lg:items-center ">
+        <div className="flex flex-col lg:flex-row items-end lg:items-center">
           <Link
             href={"/produk/sepatu/huawei"}
-            className="w-full flex hover:bg-gray-300 transition-all duration-500"
+            className="w-full flex hover:bg-gray-300 transition-all duration-500 py-5 lg:py-0"
           >
             <Checkbox
               onClick={(e) => e.stopPropagation()}
@@ -135,10 +135,10 @@ const KeranjangProduk = () => {
             </div>
           </Link>
         </div>
-        <div className="flex flex-col lg:flex-row items-end lg:items-center ">
+        <div className="flex flex-col lg:flex-row items-end lg:items-center">
           <Link
             href={"/produk/sepatu/huawei"}
-            className="w-full flex hover:bg-gray-300 transition-all duration-500"
+            className="w-full flex hover:bg-gray-300 transition-all duration-500 py-5 lg:py-0"
           >
             <Checkbox
               onClick={(e) => e.stopPropagation()}
@@ -190,10 +190,10 @@ const KeranjangProduk = () => {
             </div>
           </Link>
         </div>
-        <div className="flex flex-col lg:flex-row items-end lg:items-center ">
+        <div className="flex flex-col lg:flex-row items-end lg:items-center">
           <Link
             href={"/produk/sepatu/huawei"}
-            className="w-full flex hover:bg-gray-300 transition-all duration-500"
+            className="w-full flex hover:bg-gray-300 transition-all duration-500 py-5 lg:py-0"
           >
             <Checkbox
               onClick={(e) => e.stopPropagation()}
@@ -248,10 +248,10 @@ const KeranjangProduk = () => {
             </div>
           </Link>
         </div>
-        <div className="flex flex-col lg:flex-row items-end lg:items-center ">
+        <div className="flex flex-col lg:flex-row items-end lg:items-center">
           <Link
             href={"/produk/sepatu/huawei"}
-            className="w-full flex hover:bg-gray-300 transition-all duration-500"
+            className="w-full flex hover:bg-gray-300 transition-all duration-500 py-5 lg:py-0"
           >
             <Checkbox
               onClick={(e) => e.stopPropagation()}
@@ -303,10 +303,10 @@ const KeranjangProduk = () => {
             </div>
           </Link>
         </div>
-        <div className="flex flex-col lg:flex-row items-end lg:items-center ">
+        <div className="flex flex-col lg:flex-row items-end lg:items-center">
           <Link
             href={"/produk/sepatu/huawei"}
-            className="w-full flex hover:bg-gray-300 transition-all duration-500"
+            className="w-full flex hover:bg-gray-300 transition-all duration-500 py-5 lg:py-0"
           >
             <Checkbox
               onClick={(e) => e.stopPropagation()}
@@ -361,10 +361,10 @@ const KeranjangProduk = () => {
             </div>
           </Link>
         </div>
-        <div className="flex flex-col lg:flex-row items-end lg:items-center ">
+        <div className="flex flex-col lg:flex-row items-end lg:items-center">
           <Link
             href={"/produk/sepatu/huawei"}
-            className="w-full flex hover:bg-gray-300 transition-all duration-500"
+            className="w-full flex hover:bg-gray-300 transition-all duration-500 py-5 lg:py-0"
           >
             <Checkbox
               onClick={(e) => e.stopPropagation()}
@@ -416,10 +416,10 @@ const KeranjangProduk = () => {
             </div>
           </Link>
         </div>
-        <div className="flex flex-col lg:flex-row items-end lg:items-center ">
+        <div className="flex flex-col lg:flex-row items-end lg:items-center">
           <Link
             href={"/produk/sepatu/huawei"}
-            className="w-full flex hover:bg-gray-300 transition-all duration-500"
+            className="w-full flex hover:bg-gray-300 transition-all duration-500 py-5 lg:py-0"
           >
             <Checkbox
               onClick={(e) => e.stopPropagation()}
@@ -474,10 +474,10 @@ const KeranjangProduk = () => {
             </div>
           </Link>
         </div>
-        <div className="flex flex-col lg:flex-row items-end lg:items-center ">
+        <div className="flex flex-col lg:flex-row items-end lg:items-center">
           <Link
             href={"/produk/sepatu/huawei"}
-            className="w-full flex hover:bg-gray-300 transition-all duration-500"
+            className="w-full flex hover:bg-gray-300 transition-all duration-500 py-5 lg:py-0"
           >
             <Checkbox
               onClick={(e) => e.stopPropagation()}
@@ -529,10 +529,10 @@ const KeranjangProduk = () => {
             </div>
           </Link>
         </div>
-        <div className="flex flex-col lg:flex-row items-end lg:items-center ">
+        <div className="flex flex-col lg:flex-row items-end lg:items-center">
           <Link
             href={"/produk/sepatu/huawei"}
-            className="w-full flex hover:bg-gray-300 transition-all duration-500"
+            className="w-full flex hover:bg-gray-300 transition-all duration-500 py-5 lg:py-0"
           >
             <Checkbox
               onClick={(e) => e.stopPropagation()}
