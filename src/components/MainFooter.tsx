@@ -29,10 +29,10 @@ const MainFooter = () => {
   return (
     <footer
       className={`relative w-full pt-20 ${
-        dynamicUrlRegex.test(pathname) && "pb-20"
+        dynamicUrlRegex.test(pathname) || (pathname === "/keranjang" && "pb-20")
       }`}
     >
-      <div className="mx-auto w-full max-w-7xl px-8">
+      <div className="mx-auto w-full max-w-screen-xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
           <Typography
             placeholder=""

@@ -6,11 +6,17 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { NavigationCarousel } from ".";
+import { NavigationCarousel } from "../app/_components";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
-const ProductCarousel = ({ kategori }: { kategori: string }) => {
+const ProductCarousel = ({
+  kategori,
+  isKeranjang = false,
+}: {
+  kategori: string;
+  isKeranjang?: boolean;
+}) => {
   const router = useRouter();
 
   const handleNavigate = ({
@@ -208,8 +214,16 @@ const ProductCarousel = ({ kategori }: { kategori: string }) => {
     // Add more slide data as needed
   ];
   return (
-    <div className="flex flex-col gap-2 lg:gap-5 border-b pb-5 group">
-      <div className="flex justify-between items-center px-2 py-2 lg:px-0 ">
+    <div
+      className={`flex flex-col gap-2 lg:gap-5 border-b pb-5 group ${
+        isKeranjang ? "bg-white" : ""
+      }`}
+    >
+      <div
+        className={`flex justify-between items-center px-2 py-2 ${
+          isKeranjang ? "lg:px-4" : "lg:px-0"
+        } `}
+      >
         <motion.h2
           whileInView={{ opacity: [0, 4, 1] }}
           transition={{ duration: 3 }}

@@ -4,6 +4,7 @@ import MainSpeedDial from "./MainSpeedDial";
 import FadeInWhenVisible from "./FadeInWhenVisible";
 import ScaleWhenVisible from "./ScaleWhenVisible";
 import DetailProduct from "./DetailProduct";
+import ProductCarousel from "./ProductCarousel";
 
 export {
   MainNavbar,
@@ -12,4 +13,5 @@ export {
   FadeInWhenVisible,
   ScaleWhenVisible,
   DetailProduct,
+  ProductCarousel,
 };

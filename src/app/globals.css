@@ -5,3 +5,7 @@
 .swiper-slide-thumb-active {
   @apply opacity-[1];
 }
+
+* {
+  @apply scroll-smooth;
+}

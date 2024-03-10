@@ -1,4 +1,5 @@
-import { MainCarousel, ProductCarousel } from "./_components";
+import { ProductCarousel } from "@/components";
+import { MainCarousel } from "./_components";
 
 export default function Home() {
   return (
